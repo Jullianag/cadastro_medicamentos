@@ -24,6 +24,9 @@ jobs:
       run: |
         pip install pipenv
         pipenv sync --dev
+    - name: Test with pytest
+      run: |
+        pipenv run pytest agenda --cov=agenda
     - name: Posting Coverage
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
