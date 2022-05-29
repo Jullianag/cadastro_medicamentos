@@ -29,8 +29,4 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
         pipenv run codecov
-
-    - uses: actions/checkout@master
-    - uses: codecov/codecov-action@v2
-      with:
-      token: ${{ secrets.CODECOV_TOKEN }}
+      
