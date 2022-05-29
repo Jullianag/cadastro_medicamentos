@@ -11,6 +11,7 @@ dj-database-url = "*"
 psycopg2-binary = "*"
 collectfast = "*"
 django-s3-folder-storage = "*"
+pytest-django = "*"
 
 [dev-packages]
 codecov = "*"
