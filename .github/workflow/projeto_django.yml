@@ -1,9 +1,8 @@
-name: Python application
+name: Aplicação Django
 
 on:
   pull_request:
   push:
-
 
 jobs:
   build:
@@ -11,15 +10,6 @@ jobs:
       PIPENV_NO_INHERIT: 1
       PIPENV_IGNORE_VIRTUALENVS: 1
     runs-on: ubuntu-latest
-
-    services:
-      postgres:
-        image: postgres:11.5
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: postgres
-        ports: [ '5432:5432' ]
 
     steps:
     - uses: actions/checkout@v2
