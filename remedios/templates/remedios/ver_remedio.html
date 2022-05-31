@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="mt-5">{{ remedio.nome }} {{ remedio.dosagem }}</h1>
+        {% if remedio.foto %}
+        <p>
+          <img src="{{ remedio.foto.url }}" style="max-width: 250px; height: auto">
+        </p>
+
+        {% endif %}
+    <hr>
+    <br>
+
+        <dl>
+          <dt>ID</dt>
+          <dd>{{ remedio.id }}</dd>
+
+          <dt>Dosagem</dt>
+          <dd>{{ remedio.dosagem }}</dd>
+
+          <dt>Quantidade</dt>
+          <dd>{{ remedio.quantidade }}</dd>
+
+          <dt>Data criação</dt>
+          <dd>{{ remedio.data_criacao|date:'d/m/Y H:i' }}</dd>
+
+          <dt>Categoria</dt>
+          <dd>{{ remedio.categoria }}</dd>
+
+          <dt>Descrição</dt>
+          <dd>
+            {{ remedio.descricao }}
+          </dd>
+        </dl>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

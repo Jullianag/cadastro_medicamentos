@@ -12,6 +12,7 @@ psycopg2-binary = "*"
 collectfast = "*"
 django-s3-folder-storage = "*"
 pytest-django = "*"
+pillow = "*"
 
 [dev-packages]
 codecov = "*"
