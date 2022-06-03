@@ -13,6 +13,7 @@ collectfast = "*"
 django-s3-folder-storage = "*"
 pytest-django = "*"
 pillow = "*"
+auth = "*"
 
 [dev-packages]
 codecov = "*"

@@ -3,16 +3,18 @@
 {% block conteudo %}
 
 <h1 class="mt-5">Tabela de Medicamentos</h1>
+
 <br>
 
         <table class="table">
+
           <thead>
+
             <tr>
               <th>ID</th>
               <th>Nome</th>
               <th>Dosagem</th>
               <th>Quantidade</th>
-              <th>Categoria</th>
             </tr>
           </thead>
           <tbody>
@@ -26,7 +28,7 @@
               </td>
               <td>{{ remedio.dosagem }}</td>
               <td>{{ remedio.quantidade }}</td>
-              <td>{{ remedio.categoria }}</td>
+
             </tr>
           {% endfor %}
 
@@ -45,4 +47,14 @@
     {% endfor %}
   </ul>
 </nav>
+
+<br>
+<p>
+  Para realizar o seu cadastro
+  <a href="{% url 'cadastro' %}">clique aqui</a>.
+  <br>
+  <br>
+  Caso você já tenha uma conta, clique em
+  <a href="{% url 'login' %}">entrar</a>.
+</p>
 {% endblock %}
