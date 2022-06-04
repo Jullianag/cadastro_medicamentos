@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block conteudo %}
 
-<h1 class="mt-3 mb-3">Cadastro de usuários</h1>
+
+<h1 class="mt-3 mb-3">Cadastro de usuários <img src="{% static '1787230.png' %}" style="max-width: 30px; height: auto"/></h1>
 <br>
 <form method="POST" action="{% url 'cadastro' %}">
     {% include 'parciais/_messages.html' %}
