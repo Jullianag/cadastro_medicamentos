@@ -9,7 +9,7 @@
 
 <div class="container">
     <p>
-    Nome de usuário é: {{ user }}
+    Seu nome de usuário é: {{ user }}
     </p>
     <form action="{% url 'dashboard' %}" method="POST"
           enctype="multipart/form-data">
@@ -23,6 +23,7 @@
             </tr>
         </table>
     </form>
+
     <p>
 
   <a href="{% url 'index' %}">Ir para a tabela</a>

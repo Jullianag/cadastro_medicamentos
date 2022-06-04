@@ -5,6 +5,7 @@ from django.db.models import Q, Value
 from django.db.models.functions import Concat
 from django.http import Http404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -46,3 +47,4 @@ def busca(request):
     remedios = paginator.get_page(page)
 
     return render(request, 'remedios/index.html', {'remedios': remedios})
+
