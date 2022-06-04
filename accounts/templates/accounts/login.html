@@ -24,8 +24,8 @@
 {% else %}
 <p>
   Você já está logado como: {{ user }}.<br><br>
-  <a href="{% url 'logout' %}">Clique aqui</a> para <b>sair</b> ou vá direto para a
-  <a href="{% url 'dashboard' %}">Área de usuário</a>.
+  Clique <a href="{% url 'logout' %}">aqui</a> para <b>sair</b>.<br><br>
+  Vá direto para a <a href="{% url 'dashboard' %}">Área de usuário</a>.
 </p>
 {% endif %}
 {% endblock %}
